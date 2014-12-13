@@ -69,7 +69,7 @@ body {
   padding-top: 50px;
 }
 .starter-template {
-  padding: 40px 15px;
+  padding: 20px 15px;
 }
 .social a{
     display: inline-block;
@@ -90,9 +90,23 @@ footer {
     background-color: #101010;
     color: #FFF;
     padding: 15px;
+    margin-top: 20px;
 }
 
+.portfolio-item {
+    /* padding: 10px; */
+    background-color: #FFF;
+/*    box-shadow: 3px 3px 2px #CCC;*/
+    border: 1px solid #999;
+    border-radius: 5px;
+    min-height: 150px;
+    margin: 10px 0 15px 0;
+    padding: 0 10px 10px;
+}
 
+table thead{
+    font-weight: bold;
+}
 
 
 
