@@ -1,0 +1,63 @@
+{
+    "projects": [
+        {
+            "title": "Customized Wordpress Theme",
+            "description": "Wordpress",
+            "links" : {
+                "demo" : "http://rattanak.com",
+                "source": ""
+                }
+        },
+         {
+            "title": "Portfolio Website",
+            "description": "PHP, HTML4, Jquery, Bootstrap",
+            "links" : {
+                "demo" : "http://rattanak.com/me-v2/",
+                "source": ""
+                }
+        },
+        {
+            "title": "Music Streaming Website : Khmersounds",
+            "description": "HTML, Javscript",
+            "links" : {
+                "demo" : "http://rattanak.com/khmersounds/",
+                "source": ""
+                }
+        },
+        {
+            "title": "Simple Todo List",
+            "description": "HTML5 localstorage, CSS3, jQuery, jQuery Mobile",
+            "links" : {
+                "demo": "http://rattanakchea.github.io/simple-todo",
+                "source" : ""
+            }
+        },
+        {
+            "title": "TodoList PHP with Login",
+            "description": "PHP",
+            "links" : {
+                "demo": "http://rattanak.com/projects/todolist/start.php",
+                "source" : ""
+            }
+        },
+        {
+            "title": "Simple Chat",
+            "description": "PHP",
+            "links" : {
+                "demo": "http://rattanak.com/projects/simple_chat",
+                "source" : ""
+            }
+        },
+        {
+            "title": "Launch Cambodia",
+            "description": "Wordpress Ecommerce",
+            "links" : {
+                "demo": "http://launchcambodia.rattanak.com/",
+                "source" : ""
+            }
+        }
+    ]
+
+
+
+}
