@@ -13,9 +13,10 @@
         
     };
     
-    $.get('js/project.json', function(data){
-       
-      var projects = data.projects;
+    $.getJSON('js/project.json', function(data){
+     //data = JSON.parse(data);
+     console.log(typeof(data));
+      var projects = (data.projects);
       console.log(projects);
       
       projects.forEach(function(project){
