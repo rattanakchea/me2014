@@ -1,6 +1,14 @@
 {
     "projects": [
-     {
+        {
+            "title": "KTube",
+            "description": "Angular.js + Youtube API Application. Usage of Angular Routing, Angular Service, and Angular Filter and Directive",
+            "links" : {
+                "demo" : "http://rattanakchea.github.io/ktube/#/",
+                "source": "https://github.com/rattanakchea/ktube"
+                }
+        },
+        {
             "title": "Bookmark Manager",
             "description": "Angular.js and Firebase for real time application",
             "links" : {

@@ -90,12 +90,12 @@
                     <a class="btn btn-primary btn-sm" role="button" href="http://rattanakchea.github.io/simple-todo">Demo</a>
                     <a class="btn btn-info btn-sm" role="button" href="https://github.com/rattanakchea/simple-todo">Source Code</a>
                 </div>-->
-                <table class="table-responsive table">
+                <table class="table-responsive table table-striped">
                     <thead>
                         <tr>
-                            <td>Title</td>
-                            <td>Description</td>
-                            <td>Links</td>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Links</th>
                         </tr>
                     </thead>
                     <tbody id="data">
@@ -108,7 +108,7 @@
                 </table>
                 <script id="projectTemplate" type="text/template">
                     <tr>
-                        <td><%= title %></td>
+                        <td><strong><%= title %></strong></td>
                         <td><%= description %></td>
                         <td> <% if (links.demo) { %>
                             <a href="<%= links.demo %>">Demo</a>&nbsp;
