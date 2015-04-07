@@ -13,7 +13,7 @@
         
     };
     
-    $.getJSON('js/project.json', function(data){
+    $.getJSON('https://dl.dropboxusercontent.com/u/2122820/project.json', function(data){
      //data = JSON.parse(data);
      console.log(typeof(data));
       var projects = (data.projects);
