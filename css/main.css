@@ -109,7 +109,9 @@ table thead{
 }
 
 
-
+div.col-centered{
+    margin: 0 auto;
+}
 
 
 

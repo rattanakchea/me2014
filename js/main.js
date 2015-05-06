@@ -13,16 +13,18 @@
         
     };
     
+    $('.heartbeat').show();
     $.getJSON('https://dl.dropboxusercontent.com/u/2122820/project.json', function(data){
      //data = JSON.parse(data);
-     console.log(typeof(data));
-      var projects = (data.projects);
-      console.log(projects);
-      
-      projects.forEach(function(project){
-         builtTemplate(project);
-          
-      });
+       console.log(typeof(data));
+        var projects = (data.projects);
+        console.log(projects);
+        
+        projects.forEach(function(project){
+           builtTemplate(project);
+            
+        });
+        $('.heartbeat').hide();
       
     });
     
