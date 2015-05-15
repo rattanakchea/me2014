@@ -62,11 +62,12 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Rattanak's custom styles
    ========================================================================== */
 
 body {
   padding-top: 50px;
+  font-family: 'Open Sans', sans-serif !important;
 }
 .starter-template {
   padding: 20px 15px;
@@ -93,17 +94,6 @@ footer {
     margin-top: 20px;
 }
 
-.portfolio-item {
-    /* padding: 10px; */
-    background-color: #FFF;
-/*    box-shadow: 3px 3px 2px #CCC;*/
-    border: 1px solid #999;
-    border-radius: 5px;
-    min-height: 150px;
-    margin: 10px 0 15px 0;
-    padding: 0 10px 10px;
-}
-
 table thead{
     font-weight: bold;
 }
@@ -112,6 +102,21 @@ table thead{
 div.col-centered{
     margin: 0 auto;
 }
+
+//featured project
+.front {
+    box-shadow: 3px 3px 2px #CCC;
+}
+div.front {
+    margin-bottom: 10px;
+    transition: all .2s ease-in-out;
+}
+
+div.front:hover {
+     transform: scale(1.1);
+}
+
+
 
 
 
