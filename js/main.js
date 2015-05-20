@@ -14,7 +14,7 @@
     }
     
     $('.heartbeat').show();
-    $.getJSON('https://dl.dropboxusercontent.com/u/2122820/projects/project.json', function(data){
+    $.getJSON('https://dl.dropboxusercontent.com/u/2122820/hosted_json/project.json', function(data){
      //data = JSON.parse(data);
         var projects = (data.projects);
         //console.log(projects);
