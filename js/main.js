@@ -13,7 +13,6 @@
         $('#'+location).append(html);
     }
     
-    $('.heartbeat').show();
     $.getJSON('https://dl.dropboxusercontent.com/u/2122820/hosted_json/project.json', function(data){
      //data = JSON.parse(data);
         var projects = (data.projects);
@@ -22,7 +21,6 @@
            builtTemplate(project, 'projectTemplate', 'projectLocation');
             
         });
-        $('.heartbeat').hide();
         
         
         var featuredProjects = projects.slice(0, 3);
