@@ -10,29 +10,17 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html,
-   button,
-   input,
-   select,
-   textarea {
-    color: #222;
-  }
-
   body {
-    font-size: 1em;
+    font-size: 1.1 em;
     line-height: 1.4;
   }
 
-  a {
-    color: #00e;
-  }
-
-  a:visited {
-    color: #551a8b;
+  a, a:visited {
+    text-decoration: none;
   }
 
   a:hover {
-    color: #06e;
+    color: #ce2c39;
   }
 
 /*
@@ -65,10 +53,25 @@
    Rattanak's custom styles
    ========================================================================== */
 
-   body {
+  body {
     padding-top: 50px;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: arial, serif;
+    font-size: 1.2em;
   }
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  margin: 20px 0 10px;
+  padding: 0 0 10px 0;
+}
+
+h1.heading{
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #CCC;
+  color: #000;
+}
+
   .starter-template {
     padding: 20px 15px;
   }
@@ -93,6 +96,21 @@
     padding: 15px;
     margin-top: 20px;
   }
+  footer ul {
+    color: #0393ff;
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .footer {
+    border-top: 2px solid #CCC;
+    background: #000;
+    color: white;
+    padding: 0;
+    height: 40px;
+  }
+
+
 
   table thead{
     font-weight: bold;
@@ -118,19 +136,23 @@
    opacity: 1;
  }
 
- div.navbar-inverse {
-  background: #67b0d1;
-  border: none;
-  text-transform: uppercase;
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+#brand{
+  color: #0393ff;
   font-weight: bold;
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #0393ff;
+}
+ div.navbar-inverse {
+  border-bottom: 4px solid #0393ff;
+  text-transform: uppercase;
   font-size: 1.2em;
 }
-
-h2.heading{
-  margin-top: 1.2em;
-  margin-bottom: 1em;
-}
-
 section#intro{
  background:radial-gradient(#fff,#EEE);
  /*background: repeating-linear-gradient(-180deg, #CCC, #CCC .1px, white 2px, white 10px);*/

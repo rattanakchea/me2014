@@ -1,0 +1,11 @@
+ <div class="appetizers row">
+  <div class="item col-md-9">
+    <h3 class="name">{{listing.name}}</h3>
+    <p class="description">{{listing.description}}</p>
+    <p>Author - {{listing.author}}</p>
+  </div>
+  <div class="price col-md-3">
+    <p><a ng-href="{{listing.codepen}}">Codepen</a></p>
+    <p><a ng-href="{{listing.codepen | codepenUrl}}" target="_blank">Demo</a></p>
+  </div>
+</div>
