@@ -10,7 +10,6 @@
 
     <!-- Latest compiled and minified CSS -->
     <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/main.css">
@@ -26,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="brand" class="navbar-brand" href="#">Rattanak Chea - <small>Full Stack Developer</small></a>
+                <a id="brand" class="navbar-brand" href="/">[Rattanak Chea]</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav pull-right">
@@ -39,14 +38,14 @@
         </div>
     </div>
     <section id="intro">
-        <div class="container starter-template">
-
+        <div class="container" id="leading">
             <div class="row">
                 <div class="col-xs-6 col-md-3">
-                    <img src="img/profile1.jpg" alt="profile picture" width="200" height="200" class="img-circle img-responsive" />
+                    <img id="bubble" src="img/profile1.jpg" alt="profile picture" width="200" height="200" class="img-circle img-responsive" />
                 </div>
                 <div class="col-xs-6 col-md-9">
-                    <p class="lead">Hi, my name is Rattanak Chea. I am a <a href="http://uwb.edu">UW Bothell</a> alumi in Computer Science and Engineering. I have a wide range of programming experiences in both front and back end development, which allows me to have full scope in mind when working on a project.</p>
+                    <h1 class="title">Hey, I am Rattanak Chea</h1>
+                    <p class="sub lead">I am a web developer. I have a passion for making things to solve problems.</p>
                     <div class ="social">
                         <a href="https://github.com/rattanakchea"><img src="img/github.png" alt="github"> </a>
                         <a href="https://www.linkedin.com/in/rattanakchea/"> <img src="img/linkedin.png" alt="linkedin"></a>
@@ -59,12 +58,14 @@
     </section>
     <div class="container">
         <!--Feature Projects-->
-        <h1 class="heading"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-star"></i></button>
+        <h3 class="heading"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-star"></i></button>
             Recent Projects
-        </h1>
+        </h3>
+
+
         <script id="featured-template" type="text/x-handlebars-template">
-           {{#each this}}
-           <div class="col-xs-6 col-md-4">
+         {{#each this}}
+         <div class="col-xs-6 col-md-4">
             <div class="front">
                 <a href="{{links.demo}}"> <img src="{{links.image}}" width="100%"></a>
             </div>
@@ -74,7 +75,6 @@
             <p><a href="{{links.demo}}">Demo</a></p>
             {{/if}}
         </div>
-    </div>
     {{/each}}
 </script>
 
@@ -84,28 +84,30 @@
 
 <hr>
 
-<h1 class="heading">
+<h3 class="heading">
     <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-bookmark"></i></button>
     Technical Skills
-</h1>
+</h3>
 <ul>
     <li><strong>Front End Development</strong>: HTML, CSS, Javascript, Jquery, AngularJS, BackboneJS, Bootstrap, MaterializeCSS</li>
     <li><strong>Back End Development</strong>: PHP, Laravel, CodeIgniter, Ruby on Rails, Java</li>
     <li><strong>Database</strong>: SQL language, MySQL, SQLite, Postgres</li>
     <li><strong>Mobile Development</strong>: Android Development</li>
-    <li><strong>Knowledge of</strong>: PhoneGap, Heroku, Git, Firebase, Object Oriented Programming, Testing</li>
+    <li><strong>Others</strong>: PhoneGap, Heroku, Git, Firebase, Object Oriented Programming, Testing</li>
 </ul>
 
-<h1 class="heading"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-briefcase"></i></button>
+<h3 class="heading"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-briefcase"></i></button>
     Projects
-</h1>
+</h3>
 <div class="row" id="projects">
 </div>
+
+<!-- template for project listing in paginated table -->
 <script id="entry-template" type="text/x-handlebars-template">
     {{#each this}}
     <tr>
         <td classname="title"><strong>{{title}}</strong></td>
-        <td classname="description">
+        <td class="description" classname="description">
           {{description}}
       </td>
       <td>
@@ -138,7 +140,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-xs-6">
                 <h3>Menu</h3>
                 <ul>
                     <li><a href="https://dl.dropboxusercontent.com/u/2122820/resume/RattanakChea_Resume.pdf">Resume</a></li>                        
@@ -147,7 +149,7 @@
                     <li><a href="http://rattanak.quora.com/">Quora Blog</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-xs-6">
                 <h3>Social</h3>
                 <ul>
                     <li><a href="https://github.com/rattanakchea">Github</a></li>
@@ -156,20 +158,20 @@
                     <li><a href="mailto:rattanak.chea@gmail.com">Gmail</a></li>
                 </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
                 <h3>Open Source Projects</h3>
                 <ul>
                     <li><a href="https://rattanakchea.github.io/projects">Interactive Project Listing</a></li>
                     <li><a href="angular-codepen/">Angular - Codepen</a></li                    
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div> 
-</footer>
-<div class="footer">
-  <center>
-    <p>Rattanak Chea - Full Stack Developer</p>
-</center>
+        </div> 
+    </footer>
+    <div class="footer">
+      <center>
+        <p>Rattanak Chea - Full Stack Developer</p>
+    </center>
 </div>
 
 <!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>-->
@@ -178,5 +180,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/pagination.js"></script>
+
+
 </body>
 </html>

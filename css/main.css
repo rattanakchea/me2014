@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-  body {
+   body {
     font-size: 1.1 em;
     line-height: 1.4;
   }
@@ -53,28 +53,34 @@
    Rattanak's custom styles
    ========================================================================== */
 
-  body {
+   body {
     padding-top: 50px;
     font-family: arial, serif;
     font-size: 1.2em;
   }
 
-h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
-  margin: 20px 0 10px;
-  padding: 0 0 10px 0;
-}
-
-h1.heading{
-  margin-top: 1.2em;
-  margin-bottom: 1em;
-  border-bottom: 1px solid #CCC;
-  color: #000;
-}
-
-  .starter-template {
-    padding: 20px 15px;
+  h1, h2, h3 {
+    font-family: sans-serif;
+    margin: 20px 0 10px;
+    padding: 0px;
   }
+
+  h3.heading{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #9E9E9E;
+    text-transform: uppercase;
+    font-size: 2.5em;
+  }
+
+  h1.title {
+    color: #02A7EB;
+  }
+
+  p.sub {
+    color: #9E9E9E;
+  }
+
   .social a{
     display: inline-block;
     width: 50px;
@@ -136,7 +142,7 @@ h1.heading{
    opacity: 1;
  }
 
-.navbar-inverse .navbar-nav>li>a {
+ .navbar-inverse .navbar-nav>li>a {
   color: white;
 }
 #brand{
@@ -148,17 +154,43 @@ h1.heading{
 .navbar-inverse .navbar-nav>li>a:hover{
   color: #0393ff;
 }
- div.navbar-inverse {
+div.navbar-inverse {
   border-bottom: 4px solid #0393ff;
   text-transform: uppercase;
   font-size: 1.2em;
 }
+
 section#intro{
- background:radial-gradient(#fff,#EEE);
- /*background: repeating-linear-gradient(-180deg, #CCC, #CCC .1px, white 2px, white 10px);*/
- background-color: #ECECEC;
- color: #22313F;
+  /*background:radial-gradient(#fff,#EEE);*/
+  /*background: repeating-linear-gradient(-180deg, #CCC, #CCC .1px, white 2px, white 10px);*/
+  background-color: #eee;
+  color: #22313F;
+  /*background-image: url('http://upload.wikimedia.org/wikipedia/commons/1/16/Seattle_4.jpg');*/
+ /* background: url('../img/seattle-bg.jpg') no-repeat top left fixed;
+  background-size: contain;*/
 }
+
+div#leading {
+  padding: 20px 15px;
+}
+
+.img-circle {
+  border: 4px solid white;
+}
+
+/*carousel*/
+#owl-demo .item{
+  background: #a1def8;
+  padding: 30px 0px;
+  display: block;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
 
 /* ==========================================================================
    Helper classes

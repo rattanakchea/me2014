@@ -1,18 +1,40 @@
 (function(){
 	//get data
-	$.getJSON('https://dl.dropboxusercontent.com/u/2122820/hosted_json/project.json', callBack);
+	var jsonPath = 'https://dl.dropboxusercontent.com/u/2122820/hosted_json/project.json';
+	$.getJSON(jsonPath, callBack);
 
 	var projects = []; //projects array
 	var featuredProjects = [];  //hold 3 featured project3
 
 	function callBack(data){
 		projects = data.projects;
-		console.log(projects);
+		//console.log(projects);
 		featuredProjects = projects.slice(0, 3);
-	  	console.log(featuredProjects);
+	  	//console.log(featuredProjects);
 	  	compileAndDisplayTemplate("#entry-template", "#projectLocation", projects);
 	  	compileAndDisplayTemplate("#featured-template", "#featuredLocation", featuredProjects);
 	  	paginate();
+
+	  	//getDescription();
+	}
+
+	function getDescription(){
+		$('td.description').each(function() {
+		    var text = $(this).html();
+		    //create readmore link
+		   	if(text.length > 80){
+				var shownText = text.substr(0, 80);
+				var hiddenText = text.substr(80-1, text.length);
+				$(this).html(shownText + '....');
+			}
+		});
+	}
+	function createReadmore(text){
+		if(text.length > 80){
+			var shownText = text.substr(0, 80);
+			var hiddenText = text.substr(80-1, text.length);
+
+		}
 	}
 
 
