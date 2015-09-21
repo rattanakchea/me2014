@@ -12,6 +12,7 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/pagination.css">
 </head>
@@ -37,7 +38,7 @@
             </div><!--/.nav-collapse -->
         </div>
     </div>
-    <section id="intro">
+    <section id="intro" class="wow slideInDown" data-wow-duration="1.5s">
         <div class="container" id="leading">
             <div class="row">
                 <div class="col-xs-6 col-md-3">
@@ -78,15 +79,52 @@
     {{/each}}
 </script>
 
-<div class="row" id="featuredLocation">
+<div class="row wow slideInRight" data-wow-duration="2s" id="featuredLocation">
     <!--place holder-->
 </div>
 
 <hr>
 
-<h3 class="heading">
+<h3 class="heading"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-briefcase"></i></button>
+    Projects
+</h3>
+<div class="row" id="projects">
+</div>
+
+    <!-- template for project listing in paginated table -->
+    <script id="entry-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <tr>
+            <td classname="title"><strong>{{title}}</strong></td>
+            <td class="description" classname="description">
+              {{description}}
+          </td>
+          <td>
+              {{#if links.demo}}
+              <a href="{{links.demo}}">Demo</a>&nbsp; {{/if}}
+              {{#if links.source}}
+              <a href="{{links.source}}">Source</a>
+              {{/if}}
+          </td>
+      </tr>
+      {{else}}
+      <p class="empty">No content</p>
+      {{/each}}
+    </script>
+<table class="paginated table table-striped">
+  <thead>
+    <tr>
+      <th style="width:15%">Title</th>
+      <th>Description</th>
+      <th>Links</th>
+  </tr>
+    </thead>
+    <tbody id="projectLocation" class="list">
+    <tbody>
+</table>
+    <h3 class="heading">
     <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-bookmark"></i></button>
-    Technical Skills
+    Languages
 </h3>
 <ul>
     <li><strong>Front End Development</strong>: HTML, CSS, Javascript, Jquery, AngularJS, BackboneJS, Bootstrap, MaterializeCSS</li>
@@ -95,46 +133,8 @@
     <li><strong>Mobile Development</strong>: Android Development</li>
     <li><strong>Others</strong>: PhoneGap, Heroku, Git, Firebase, Object Oriented Programming, Testing</li>
 </ul>
-
-<h3 class="heading"><button type="button" class="btn btn-info"><i class="glyphicon glyphicon-briefcase"></i></button>
-    Projects
-</h3>
-<div class="row" id="projects">
 </div>
 
-<!-- template for project listing in paginated table -->
-<script id="entry-template" type="text/x-handlebars-template">
-    {{#each this}}
-    <tr>
-        <td classname="title"><strong>{{title}}</strong></td>
-        <td class="description" classname="description">
-          {{description}}
-      </td>
-      <td>
-          {{#if links.demo}}
-          <a href="{{links.demo}}">Demo</a>&nbsp; {{/if}}
-          {{#if links.source}}
-          <a href="{{links.source}}">Source</a>
-          {{/if}}
-      </td>
-  </tr>
-  {{else}}
-  <p class="empty">No content</p>
-  {{/each}}
-</script>
-<table class="paginated table table-striped">
-  <thead>
-    <tr>
-      <th style="width:15%">Title</th>
-      <th>Description</th>
-      <th>Links</th>
-  </tr>
-</thead>
-<tbody id="projectLocation" class="list">
-    <tbody>
-    </table>
-
-</div>
 </div> <!--body container end-->
 
 <footer>
@@ -180,7 +180,9 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/pagination.js"></script>
-
-
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
